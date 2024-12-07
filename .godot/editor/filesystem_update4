@@ -1,0 +1,4 @@
+res://Scenes/battle_scene.tscn
+res://Scripts/turn_manager.gd
+res://Scripts/player_ui.gd
+res://Scripts/character.gd

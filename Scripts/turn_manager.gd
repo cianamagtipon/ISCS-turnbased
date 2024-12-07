@@ -1,10 +1,16 @@
 extends Node2D
 
+@export var enemies: Array[Node]
+
 @export var player_char: Node
 @export var enemy_char: Node
-var cur_char: Character
 
 @export var next_turn_delay: float = 1.0
+
+var cur_char: Character
+
+var characters: Array[Node] = []  # List of all characters (player + enemies)
+var cur_index: int = 0            # Current index in the turn order
 
 var game_over : bool = false
 
@@ -13,14 +19,14 @@ signal character_end_turn(character)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	characters.append(player_char)
+	characters += enemies
 	await get_tree().create_timer(0.5).timeout
 	begin_next_turn()
 
 func begin_next_turn():
-	if cur_char == player_char:
-		cur_char = enemy_char
-	else:
-		cur_char = player_char
+	cur_index = (cur_index + 1) % characters.size()
+	cur_char = characters[cur_index]
 	
 	emit_signal("character_begin_turn", cur_char)
 

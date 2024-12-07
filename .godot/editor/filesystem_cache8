@@ -1,0 +1,22 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1733563082
+README.md::TextFile::-1::1733562441::0::1::::<><>::
+::res://Objects/::1733562123
+character.tscn::PackedScene::2780504022592922862::1733562123::0::1::::<><>::uid://b7im3l83r63ca::::res://Sprites/Dragon.png<>res://Scripts/character.gd
+::res://Objects/Combat Actions/::1733545852
+Heal.tres::Resource/CombatAction::5366884192717842256::1733545852::0::1::::<><>::res://Scripts/combat_action.gd
+Slash.tres::Resource/CombatAction::661246432077715048::1733479221::0::1::::<><>::res://Scripts/combat_action.gd
+Stomp.tres::Resource/CombatAction::2606100426118786749::1733479221::0::1::::<><>::res://Scripts/combat_action.gd
+::res://Scenes/::1733562965
+battle_scene.tscn::PackedScene::8654401521106317482::1733562965::0::1::::<><>::uid://b7im3l83r63ca::::res://Sprites/Dragon.png<>res://Scripts/turn_manager.gd<>uid://bfu5q3ic43x6e::::res://Objects/character.tscn<>uid://jokvq0ecufka::::res://Objects/Combat Actions/Slash.tres<>uid://d1n3wv5fyq6ym::::res://Sprites/Reptile.png<>uid://cip02fd6bwx17::::res://Objects/Combat Actions/Heal.tres<>uid://bdeodf2ts3f1v::::res://Objects/Combat Actions/Stomp.tres<>res://Scripts/player_ui.gd<>res://Scripts/combat_button.gd
+::res://Scripts/::1733479221
+character.gd::GDScript::-1::1733479221::0::1::::Character<>Node2D<>::
+combat_action.gd::GDScript::-1::1733479221::0::1::::CombatAction<>Resource<>::
+combat_button.gd::GDScript::-1::1733479221::0::1::::<>Button<>::
+player_ui.gd::GDScript::-1::1733479221::0::1::::<>VBoxContainer<>::
+turn_manager.gd::GDScript::-1::1733479221::0::1::::<>Node2D<>::
+::res://Sprites/::1733562953
+Boar.png::CompressedTexture2D::7458776819050176643::1733479221::1733562953::1::::<><>::
+Dragon.png::CompressedTexture2D::4649757938316707964::1733479221::1733562953::1::::<><>::
+Reptile.png::CompressedTexture2D::9012749409328691160::1733479221::1733562953::1::::<><>::
+Snake.png::CompressedTexture2D::8380749311827762203::1733479221::1733562953::1::::<><>::

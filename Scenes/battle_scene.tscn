@@ -10,8 +10,9 @@
 [ext_resource type="Script" path="res://Scripts/player_ui.gd" id="8_70saf"]
 [ext_resource type="Script" path="res://Scripts/combat_button.gd" id="8_pg7va"]
 
-[node name="BattleScene" type="Node2D" node_paths=PackedStringArray("player_char", "enemy_char")]
+[node name="BattleScene" type="Node2D" node_paths=PackedStringArray("enemies", "player_char", "enemy_char")]
 script = ExtResource("1_txayu")
+enemies = [NodePath("Enemy"), NodePath("Enemy")]
 player_char = NodePath("Player")
 enemy_char = NodePath("Enemy")
 
